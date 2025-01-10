@@ -1,5 +1,5 @@
 # LoanAmortizationSchedule
-
+This is a development task for Europace. The task description can be found [here](https://github.com/europace/tilgungsplan_task?tab=readme-ov-file).
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.0.7.
 
 ## Development server
