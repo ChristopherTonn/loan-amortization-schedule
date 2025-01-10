@@ -1,5 +1,6 @@
-<div class="container mx-auto p-6">
-    <h1 class="text-2xl font-bold mb-4">Tilgungsplan Rechner</h1>
+<section class="container mx-auto p-6">
+    <img src="assets/logo.png" alt="Logo" class="mb-2 mt-6 h-16">
+    <h1 class="text-2xl font-bold mb-9">Tilgungsplan Rechner</h1>
     <form (submit)="calculateLoanSchedule()" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 p-6 bg-white shadow-md rounded-md">
         <div>
           <label for="loanAmount" class="block text-sm font-medium text-gray-700">Darlehensbetrag (€):</label>
@@ -54,22 +55,29 @@
         <div class="sm:col-span-2 lg:col-span-3 text-right">
           <button
             type="submit"
-            class="bg-purple-400 hover:bg-purple-500 text-white font-semibold py-3 px-6 rounded-md shadow-md focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
+            class="bg-purple-400 hover:bg-purple-500 text-white font-semibold py-3 px-6 rounded-md shadow-md focus:outline-none focus:ring-2 focus:ring-black focus:ring-offset-2"
           >
             Berechnen
           </button>
         </div>
       </form>
+
       <div *ngIf="schedule.length" class="mt-8">
         <h2 class="text-xl font-bold text-gray-800 mb-4">Tilgungsplan</h2>
-        <ul role="list" class="divide-y divide-gray-200 bg-white shadow rounded-md">
-          <li *ngFor="let entry of schedule; let i = index" [ngClass]="{'even:bg-gray-50': i % 2 === 1}" class="flex flex-col sm:flex-row sm:justify-between sm:items-center px-4 py-5">
+        <ul 
+          role="list" 
+          class="divide-y divide-gray-200 bg-white shadow rounded-md h-[650px] overflow-y-auto"
+        >
+          <li *ngFor="let entry of schedule; let i = index" 
+              [ngClass]="{'even:bg-gray-50': i % 2 === 1}" 
+              class="flex flex-col sm:flex-row sm:justify-between sm:items-center px-4 py-5"
+          >
             <div class="mb-4 sm:mb-0 sm:mr-6 min-w-52">
               <p class="text-sm font-semibold text-gray-900">
                 {{ entry.date }}
               </p>
             </div>
-
+      
             <div class="flex justify-center items-start gap-x-6 sm:flex-1">
               <p>
                 <span class="font-semibold text-gray-800">Restschuld:</span> {{ entry.remainingDebt | number: '1.2-2' }} €
@@ -81,7 +89,7 @@
                 <span class="font-semibold text-gray-800">Tilgung:</span> {{ entry.repayment | number: '1.2-2' }} €
               </p>
             </div>
-
+      
             <div class="mt-4 sm:mt-0 text-sm text-gray-900 sm:text-right">
               <p class="font-semibold">
                 Gesamt: <span class="text-green-600">{{ entry.rate | number: '1.2-2' }} €</span>
@@ -90,7 +98,6 @@
           </li>
         </ul>
       </div>
-  </div>
 
       <div *ngIf="schedule.length" class="mt-10 p-6 border border-gray-300 rounded-md shadow-md text-center">
         <p class="text-sm font-medium text-gray-800 mb-4">
