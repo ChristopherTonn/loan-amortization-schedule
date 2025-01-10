@@ -91,3 +91,17 @@
         </ul>
       </div>
   </div>
+
+      <div *ngIf="schedule.length" class="mt-10 p-6 border border-gray-300 rounded-md shadow-md text-center">
+        <p class="text-sm font-medium text-gray-800 mb-4">
+          <span class="font-semibold">Wichtiger Hinweis:</span> Dies ist eine pauschale und unverbindliche Beispielrechnung und stellt somit kein Angebot dar.
+        </p>
+        <button
+          type="button"
+          class="bg-purple-400 hover:bg-purple-500 text-white font-semibold text-white font-bold py-3 px-8 rounded-md shadow-md focus:outline-none focus:ring-2 focus:ring-black focus:ring-offset-2"
+          onclick="window.open('https://europace.de/kontakt/', '_blank')"
+        >
+          Wir beraten Sie gern
+        </button>
+      </div>
+</section>
