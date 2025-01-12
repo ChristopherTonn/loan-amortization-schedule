@@ -5,7 +5,7 @@ This project was generated using [Angular CLI](https://github.com/angular/angula
 
 Here is a screenshot of the Loan Amortization Schedule application:
 
-![Loan Amortization Schedule Screenshot](/loan-amortization-schedule/src/assets/screenshot.png)
+![Screenshot](./src/assets/screenshot.png)
 
 ## Installation
 
