@@ -5,7 +5,7 @@ This project was generated using [Angular CLI](https://github.com/angular/angula
 
 Here is a screenshot of the Loan Amortization Schedule application:
 
-![Loan Amortization Schedule Screenshot](./assets/screenshot.png)
+![Loan Amortization Schedule Screenshot](/loan-amortization-schedule/src/assets/screenshot.png)
 
 ## Installation
 
@@ -36,7 +36,7 @@ After completing these steps, you can proceed with the development server, code 
 To start a local development server, run:
 
 ```bash
-ng serve
+ng s
 ```
 
 Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
