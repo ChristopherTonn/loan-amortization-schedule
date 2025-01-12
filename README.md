@@ -2,6 +2,30 @@
 This is a development task for Europace. The task description can be found [here](https://github.com/europace/tilgungsplan_task?tab=readme-ov-file).
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.0.7.
 
+## Installation
+
+To set up the project locally, follow these steps:
+
+1. **Clone the repository:**
+
+    ```bash
+    git clone https://github.com/europace/loan-amortization-schedule.git
+    ```
+
+2. **Navigate to the project directory:**
+
+    ```bash
+    cd loan-amortization-schedule
+    ```
+
+3. **Install the dependencies:**
+
+    ```bash
+    npm install
+    ```
+
+After completing these steps, you can proceed with the development server, code scaffolding, building, and testing as described above.
+
 ## Development server
 
 To start a local development server, run:
